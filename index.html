@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Module 2 Final Project</title>
     <link rel="stylesheet" href="./styles.css" />
     <script
       src="https://kit.fontawesome.com/bf8ec59227.js"
       crossorigin="anonymous"
     ></script>
     <script src="index.js"></script>
-    <title>Module 2 Final Project</title>
   </head>
   <body>
     <section class="landing">
@@ -36,9 +35,24 @@
               >Sign Up</a
             >
           </div>
+          <button class="btn__menu onclick=:openMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
       </nav>
       <div class="menu">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <i class="fa-solid fa-x"></i>
+        </button>
+        <div class="menu__links">
+          <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
+          <a href="#blog" class="menu__link" onclick="closeMenu()">Blog</a>
+          <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+          <a href="#contact__us" class="menu__link" onclick="closeMenu()">Contact Us</a>
+          <a href="#login" class="menu__link" onclick="closeMenu()">Login</a>
+          <a href="#signup" class="menu__link menu__link--primary" onclick="closeMenu()">Sign up</a>
+        </div>
+      </div>
         <header>
           <div class="container">
             <div class="row">
@@ -78,7 +92,6 @@
             </div>
           </div>
         </header>
-      </div>
     </section>
     <main>
       <section id="features">
