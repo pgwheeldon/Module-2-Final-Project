@@ -489,7 +489,6 @@ VALUES
 
 .values__list {
   display: flex;
-  align-items: top;
   justify-content: center;
   gap: 32px;
 }
@@ -1109,14 +1108,14 @@ RESPONSIVENESS
   .nav__links {
     display: none;
   }
-  .btn {
-    transform: scale(0.85);
-  }
 }
 
 @media (max-width: 768px) {
   body {
     text-align: center;
+  }
+  .btn__menu {
+    width: 25%;
   }
   #quality .row,
   #values .row {
@@ -1133,11 +1132,6 @@ RESPONSIVENESS
   .plan:nth-child(1) .plan__target {
     padding-bottom: 32px;
   }
-  #values .btn {
-    text-align: center;
-    padding: 0.5rem;
-    margin: 0 auto;
-  }
   h3 {
     font-size: 1rem;
   }
@@ -1150,6 +1144,52 @@ RESPONSIVENESS
   #values {
     align-items: center;
     justify-content: center;
+  }
+  .header__email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .header__email--btn {
+    position: static;
+    width: 100%;
+  }
+  .value {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section__tag {
+    margin-top: 48px;
+    padding-top: 16px;
+  }
+  .step {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature__row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    width: 40%;
+  }
+  .start__buttons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .start__button {
+    text-align: center;
+    font-size: 1rem;
+    padding: 8px 4px;
+    white-space: nowrap;
+  }
+  .plans {
+    flex-direction: column;
+  }
+  #values .btn {
+    margin: 0 auto;
+    width: 35%;
   }
 }
 
@@ -1164,7 +1204,22 @@ RESPONSIVENESS
   main {
     margin-bottom: 80px;
   }
+  .section__para {
+    text-align: center;
+  }
   .plan:nth-child(1) .plan__target {
     padding-bottom: 32px;
+  }
+  .features {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .feature {
+    width: 75%;
+  }
+  .values__list {
+    flex-direction: column;
+    align-items: center;
   }
 }
