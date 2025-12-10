@@ -98,6 +98,7 @@ p {
   padding: 16px 24px;
   transition: all 300ms ease;
   cursor: pointer;
+  width: 25%;
 }
 
 /*==========
@@ -376,10 +377,6 @@ QUALITY
   display: block;
 }
 
-#quality .btn {
-  width: 25%;
-}
-
 /* ==========
 STEPS
 ========== */
@@ -539,10 +536,6 @@ VALUES
   color: #718096;
   font-weight: 500;
   line-height: 1.5;
-}
-
-#values .btn {
-  width: 25%;
 }
 
 .values__img--wrapper {
@@ -1114,9 +1107,6 @@ RESPONSIVENESS
   body {
     text-align: center;
   }
-  .btn__menu {
-    width: 25%;
-  }
   #quality .row,
   #values .row {
     flex-direction: column-reverse;
@@ -1153,6 +1143,7 @@ RESPONSIVENESS
   .header__email--btn {
     position: static;
     width: 100%;
+    margin-top: 8px;
   }
   .value {
     flex-direction: column;
@@ -1161,6 +1152,13 @@ RESPONSIVENESS
   .section__tag {
     margin-top: 48px;
     padding-top: 16px;
+  }
+  #testimonials .section__para,
+  #quality .section__para,
+  #values .section__para,
+  #testimonials .section__para,
+  .section__para {
+    text-align: center;
   }
   .step {
     flex-direction: column;
@@ -1171,7 +1169,10 @@ RESPONSIVENESS
     align-items: center;
   }
   .btn {
-    width: 40%;
+    width: 35%;
+    margin: 0 auto;
+    padding: 8px 4px;
+    white-space: nowrap;
   }
   .start__buttons {
     flex-direction: column;
@@ -1186,10 +1187,28 @@ RESPONSIVENESS
   }
   .plans {
     flex-direction: column;
+    padding: 16px 24px
   }
-  #values .btn {
+  .values__description,
+  .values__img--wrapper, 
+  .testimonials__img--wrapper, 
+  .testimonials__description {
+    width: 100%;
+    align-items: center;
+  }
+  .testimonial__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .testimonial__bottom--description {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .testimonial__buttons {
     margin: 0 auto;
-    width: 35%;
   }
 }
 
@@ -1203,9 +1222,6 @@ RESPONSIVENESS
   }
   main {
     margin-bottom: 80px;
-  }
-  .section__para {
-    text-align: center;
   }
   .plan:nth-child(1) .plan__target {
     padding-bottom: 32px;
@@ -1221,5 +1237,37 @@ RESPONSIVENESS
   .values__list {
     flex-direction: column;
     align-items: center;
+  }
+  .start__row {
+    flex-direction: column;
+    padding: 0; 
+  }
+  .start__title, 
+  .start__buttons {
+    width: 80%
+  }
+  .start__buttons {
+    flex-direction: row;
+    z-index: 5;
+    margin-top: 24px;
+  }
+  .footer__bottom {
+    flex-direction: column;
+  }
+  .footer__copyright {
+    margin: 16px 0;
+  }
+}
+@media (max-width: 375px) {
+  h2 {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .start__button {
+    width: 50%
+  }
+  .testimonial__detail {
+    font-size: .8rem;
   }
 }
