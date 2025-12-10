@@ -35,7 +35,6 @@ img {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  align-items: center;
 }
 
 section {
@@ -1160,6 +1159,10 @@ RESPONSIVENESS
   .section__para {
     text-align: center;
   }
+  .steps__description,
+  .steps__img--wrapper {
+    width: 100%;
+  }
   .step {
     flex-direction: column;
     align-items: center;
@@ -1187,11 +1190,11 @@ RESPONSIVENESS
   }
   .plans {
     flex-direction: column;
-    padding: 16px 24px
+    padding: 16px 24px;
   }
   .values__description,
-  .values__img--wrapper, 
-  .testimonials__img--wrapper, 
+  .values__img--wrapper,
+  .testimonials__img--wrapper,
   .testimonials__description {
     width: 100%;
     align-items: center;
@@ -1240,11 +1243,11 @@ RESPONSIVENESS
   }
   .start__row {
     flex-direction: column;
-    padding: 0; 
+    padding: 0;
   }
-  .start__title, 
+  .start__title,
   .start__buttons {
-    width: 80%
+    width: 80%;
   }
   .start__buttons {
     flex-direction: row;
@@ -1265,9 +1268,9 @@ RESPONSIVENESS
     text-align: center;
   }
   .start__button {
-    width: 50%
+    width: 50%;
   }
   .testimonial__detail {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
